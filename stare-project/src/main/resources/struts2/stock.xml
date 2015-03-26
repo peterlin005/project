@@ -1,0 +1,23 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package namespace="/stock" name="stock" extends="base">
+		<action name="companyInfo" class="companyInfoAction">
+			<result>companyInfo.jsp</result>
+		</action>
+		<action name="transactionInfo" class="transactionInfoAction">
+			<result>transactionInfo.jsp</result>
+		</action>
+		<action name="financialReport" class="financialReportAction">
+			<result>financialReport.jsp</result>
+		</action>
+		<action name="financialReportDetail" class="financialReportDetailAction">
+			<result>financialReportDetail.jsp</result>
+		</action>
+		<action name="statisticAnalysis" class="statisticAnalysisAction">
+			<result>statisticAnalysis.jsp</result>
+		</action>
+	</package>
+</struts>

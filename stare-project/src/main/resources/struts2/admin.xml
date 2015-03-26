@@ -1,0 +1,11 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package namespace="/admin" name="admin" extends="base">
+		<action name="stockAdmin" class="stockAdminAction">
+			<result>stockAdmin.jsp</result>
+		</action>
+	</package>
+</struts>
