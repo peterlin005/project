@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="template" template="/WEB-INF/tiles/template.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"  value="/WEB-INF/tiles/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+	<definition name="welcome"  extends="template">
+		<put-attribute name="title" value="歡迎" />
+		<put-attribute name="body" value="/WEB-INF/tiles/welcome.jsp" />
+	</definition>
+	<definition name="login"  extends="template">
+		<put-attribute name="title" value="登入" />
+		<put-attribute name="body" value="/WEB-INF/tiles/login.jsp" />
+	</definition>
+	<definition name="register"  extends="template">
+		<put-attribute name="title" value="註冊" />
+		<put-attribute name="body" value="/WEB-INF/tiles/register.jsp" />
+	</definition>
+	<definition name="queryTimetable"  extends="template">
+		<put-attribute name="title" value="查詢時刻表" />
+		<put-attribute name="body" value="/WEB-INF/tiles/queryTimetable.jsp" />
+	</definition>
+	<definition name="showTimetable"  extends="template">
+		<put-attribute name="title" value="顯示時刻表" />
+		<put-attribute name="body" value="/WEB-INF/tiles/showTimetable.jsp" />
+	</definition>
+	<definition name="orderTicket"  extends="template">
+		<put-attribute name="title" value="訂票" />
+		<put-attribute name="body" value="/WEB-INF/tiles/orderTicket.jsp" />
+	</definition>
+	<definition name="showOrder"  extends="template">
+		<put-attribute name="title" value="顯示訂單" />
+		<put-attribute name="body" value="/WEB-INF/tiles/showOrder.jsp" />
+	</definition>
+</tiles-definitions>
